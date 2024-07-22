@@ -1,13 +1,15 @@
-package ifba.com.br.Service;
+package ifba.com.br.service;
 
 
 
-import ifba.com.br.model.User;
+import ifba.com.br.entity.User;
 import ifba.com.br.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -16,7 +18,7 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public List<User> getAllUsers() {
+    public List<User> findAll() {
         return userRepository.findAll();
     }
 
@@ -24,19 +26,18 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    public User createUser(User user) {
+    public User save(User user) {
         return userRepository.save(user);
     }
 
-    public Optional<User> updateUser(Long id, User userDetails) {
-        return userRepository.findById(id).map(user -> {
-            user.setName(userDetails.getName());
-            user.setEmail(userDetails.getEmail());
-            return userRepository.save(user);
-        });
+    public void updateUser(User user) {
+             userRepository.save(user);
     }
 
-    public void deleteUser(Long id) {
+    public Map<String, String> deleteUser(Long id) {
         userRepository.deleteById(id);
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "Usuario deletado com sucesso");
+        return response;
     }
 }
