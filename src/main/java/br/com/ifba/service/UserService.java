@@ -1,16 +1,17 @@
-package ifba.com.br.service;
+package br.com.ifba.service;
 
 
 
-import ifba.com.br.entity.User;
-import ifba.com.br.repository.UserRepository;
+import br.com.ifba.exception.BusinessException;
+import br.com.ifba.repository.UserRepository;
+import br.com.ifba.entity.User;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -22,14 +23,15 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public Optional<User> getUserById(Long id) {
-        return userRepository.findById(id);
+    public User findById(Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(()->new BusinessException("Recurso não encontrado!"));
     }
-
+    @Transactional
     public User save(User user) {
         return userRepository.save(user);
     }
-
+    @Transactional
     public void updateUser(User user) {
              userRepository.save(user);
     }

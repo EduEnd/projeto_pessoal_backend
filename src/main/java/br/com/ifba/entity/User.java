@@ -1,7 +1,7 @@
-package ifba.com.br.entity;
+package br.com.ifba.entity;
 
 
-import ifba.com.br.infrastructure.entity.PersistenceEntity;
+import br.com.ifba.infrastructure.entity.PersistenceEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

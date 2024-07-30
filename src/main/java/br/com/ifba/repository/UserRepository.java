@@ -1,8 +1,8 @@
-package ifba.com.br.repository;
+package br.com.ifba.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ifba.com.br.entity.User;
+import br.com.ifba.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 }

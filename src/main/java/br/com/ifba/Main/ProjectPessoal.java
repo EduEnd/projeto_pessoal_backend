@@ -1,4 +1,4 @@
-package ifba.com.br.Main;
+package br.com.ifba.Main;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
