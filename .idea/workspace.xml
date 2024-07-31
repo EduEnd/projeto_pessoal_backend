@@ -7,12 +7,10 @@
     <list default="true" id="932bf6fe-9180-42b3-8f04-2be418669122" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifba/com/br/Main/ProjectPessoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Main/ProjectPessoal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifba/com/br/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifba/com/br/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifba/com/br/infrastructure/entity/PersistenceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/infrastructure/entity/PersistenceEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifba/com/br/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifba/com/br/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/exception/ApiExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/exception/ApiExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,10 @@
       <workItem from="1722265354798" duration="2321000" />
       <workItem from="1722273924118" duration="1834000" />
       <workItem from="1722363594771" duration="4647000" />
-      <workItem from="1722369590042" duration="1473000" />
+      <workItem from="1722369590042" duration="1943000" />
+      <workItem from="1722426027751" duration="1094000" />
+      <workItem from="1722427193602" duration="873000" />
+      <workItem from="1722428151986" duration="781000" />
     </task>
     <servers />
   </component>

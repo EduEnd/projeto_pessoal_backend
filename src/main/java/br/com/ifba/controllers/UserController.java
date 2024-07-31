@@ -31,6 +31,22 @@ public class UserController {
                         UserGetResponseDto.class));
     }
 
+    @GetMapping(path = "/findByName", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?>findByName(){
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(objectMapperUtil.mapAll(
+                        this.userService.findByName(),
+                        UserGetResponseDto.class));
+    }
+
+    @GetMapping(path = "/findByEmail", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?>findByEmail(){
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(objectMapperUtil.mapAll(
+                        this.userService.findByEmail(),
+                        UserGetResponseDto.class));
+    }
+
 
     @GetMapping("/users/{id}")
     public ResponseEntity<UserGetResponseDto> findById(@PathVariable Long id) {

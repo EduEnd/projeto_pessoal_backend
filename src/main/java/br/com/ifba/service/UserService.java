@@ -23,6 +23,14 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    public List<User> findByName() {
+        return userRepository.findByName();
+    }
+
+    public List<User> findByEmail() {
+        return userRepository.findByEmail();
+    }
+
     public User findById(Long id) {
         return userRepository.findById(id)
                 .orElseThrow(()->new BusinessException("Recurso não encontrado!"));
