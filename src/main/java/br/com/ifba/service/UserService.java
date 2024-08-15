@@ -5,6 +5,8 @@ package br.com.ifba.service;
 import br.com.ifba.exception.BusinessException;
 import br.com.ifba.repository.UserRepository;
 import br.com.ifba.entity.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,8 +21,8 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public List<User> findAll() {
-        return userRepository.findAll();
+    public Page<User> findAll(Pageable pageable) {
+        return userRepository.findAll(pageable);
     }
 
     public List<User> findByName() {

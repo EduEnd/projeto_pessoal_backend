@@ -7,6 +7,8 @@ import br.com.ifba.entity.User;
 import br.com.ifba.infrastructure.mapper.ObjectMapperUtil;
 import br.com.ifba.service.UserService;
 import jakarta.validation.Valid;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -24,11 +26,10 @@ public class UserController {
     private final ObjectMapperUtil objectMapperUtil;
 
     @GetMapping(path = "/findAll", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?>findAll(){
+    public ResponseEntity<Page<UserGetResponseDto>>findAll(Pageable pageable){
         return ResponseEntity.status(HttpStatus.OK)
-                .body(objectMapperUtil.mapAll(
-                        this.userService.findAll(),
-                        UserGetResponseDto.class));
+                .body(this.userService.findAll(pageable).map(c -> objectMapperUtil.
+                        map(c, UserGetResponseDto.class)));
     }
 
     @GetMapping(path = "/findByName", produces = MediaType.APPLICATION_JSON_VALUE)
