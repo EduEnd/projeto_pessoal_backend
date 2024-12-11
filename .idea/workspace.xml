@@ -9,10 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="932bf6fe-9180-42b3-8f04-2be418669122" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/client/SpringClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Main/SpringClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/dto/UserGetResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/dto/UserGetResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/dto/UserPostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/dto/UserPostRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -49,38 +53,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ProjectPessoal (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProjectPessoal.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProjetoPessoal.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.projectPessoa.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.projetoPessoal.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/perei/Documents/GitHub/weiv-application&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringClient.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ProjectPessoal (1).executor": "Run",
+    "Spring Boot.ProjectPessoal.executor": "Run",
+    "Spring Boot.ProjetoPessoal.executor": "Run",
+    "Spring Boot.projectPessoa.executor": "Run",
+    "Spring Boot.projetoPessoal.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/perei/Documents/GitHub/projeto_pessoal_backend/src/main/java/br/com/ifba/funcionario/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\perei\Documents\GitHub\projeto_pessoal_backend\src\main\java\br\com\ifba\funcionario\service" />
+      <recent name="C:\Users\perei\Documents\GitHub\projeto_pessoal_backend\src\main\java\br\com\ifba\funcionario" />
+      <recent name="C:\Users\perei\Documents\GitHub\projeto_pessoal_backend\src\main\java\br\com\ifba" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\perei\IdeaProjects\site\src\main\java\ifba\com\br" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ProjectPessoal (1)">
+    <configuration name="SpringClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ifba.Main.SpringClient" />
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ifba.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProjectPessoal (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="site" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.ifba.Main.ProjectPessoal" />
@@ -103,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringClient" />
         <item itemvalue="Spring Boot.ProjectPessoal" />
       </list>
     </recent_temporary>
@@ -141,7 +165,15 @@
       <workItem from="1723665325622" duration="1321000" />
       <workItem from="1723666753766" duration="188000" />
       <workItem from="1723690845901" duration="1825000" />
-      <workItem from="1723736209600" duration="1704000" />
+      <workItem from="1723736209600" duration="5081000" />
+      <workItem from="1723845048591" duration="1606000" />
+      <workItem from="1723852934407" duration="42000" />
+      <workItem from="1723853002617" duration="77000" />
+      <workItem from="1723864912967" duration="499000" />
+      <workItem from="1723891852931" duration="867000" />
+      <workItem from="1733313765751" duration="767000" />
+      <workItem from="1733331457102" duration="1162000" />
+      <workItem from="1733942714155" duration="5723000" />
     </task>
     <servers />
   </component>

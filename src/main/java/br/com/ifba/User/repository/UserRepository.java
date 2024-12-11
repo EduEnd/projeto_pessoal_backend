@@ -1,8 +1,8 @@
-package br.com.ifba.repository;
+package br.com.ifba.User.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import br.com.ifba.entity.User;
+import br.com.ifba.User.entity.User;
 
 import java.util.List;
 

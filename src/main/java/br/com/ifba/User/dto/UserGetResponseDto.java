@@ -1,4 +1,4 @@
-package br.com.ifba.dto;
+package br.com.ifba.User.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

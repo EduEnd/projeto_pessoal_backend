@@ -1,11 +1,11 @@
-package br.com.ifba.controllers;
+package br.com.ifba.User.controller;
 
 
-import br.com.ifba.dto.UserGetResponseDto;
-import br.com.ifba.dto.UserPostRequestDto;
-import br.com.ifba.entity.User;
+import br.com.ifba.User.dto.UserGetResponseDto;
+import br.com.ifba.User.dto.UserPostRequestDto;
+import br.com.ifba.User.entity.User;
 import br.com.ifba.infrastructure.mapper.ObjectMapperUtil;
-import br.com.ifba.service.UserService;
+import br.com.ifba.User.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

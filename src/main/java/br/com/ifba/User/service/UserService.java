@@ -1,10 +1,10 @@
-package br.com.ifba.service;
+package br.com.ifba.User.service;
 
 
 
+import br.com.ifba.User.repository.UserRepository;
 import br.com.ifba.exception.BusinessException;
-import br.com.ifba.repository.UserRepository;
-import br.com.ifba.entity.User;
+import br.com.ifba.User.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

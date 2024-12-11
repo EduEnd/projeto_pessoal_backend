@@ -1,4 +1,4 @@
-package br.com.ifba.entity;
+package br.com.ifba.User.entity;
 
 
 import br.com.ifba.infrastructure.entity.PersistenceEntity;
