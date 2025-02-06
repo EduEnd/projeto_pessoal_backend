@@ -34,7 +34,7 @@ public class ClientService implements ClientIService {
      * @return Lista de clientes com o nome especificado
      */
     public List<Client> findByName(String name) {
-        return ClientRepository.findByName(name);
+        return (List<Client>) ClientRepository.findByName(name);
     }
 
     /**

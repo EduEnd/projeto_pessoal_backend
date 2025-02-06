@@ -1,4 +1,4 @@
-package br.com.ifba.funcionario.service;
+package br.com.ifba.Funcionario.service;
 
 import br.com.ifba.Funcionario.entity.Funcionario;
 import br.com.ifba.Funcionario.repository.FuncionarioRepository;

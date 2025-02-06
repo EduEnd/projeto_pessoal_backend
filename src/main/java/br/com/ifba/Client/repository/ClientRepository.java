@@ -6,11 +6,15 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
+
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
     // Método para buscar uma lista de clientes por nome
-   List<Client> findByName(String name);
-
-
+        List<Client> findByName(String name);
 
 }
+
+
+
+
+

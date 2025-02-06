@@ -36,7 +36,7 @@ public class UserController {
     public ResponseEntity<?>findByName(){
         return ResponseEntity.status(HttpStatus.OK)
                 .body(objectMapperUtil.mapAll(
-                        this.userService.findByName(),
+                        this.userService.findByName("Rodrigo"),
                         UserGetResponseDto.class));
     }
 
