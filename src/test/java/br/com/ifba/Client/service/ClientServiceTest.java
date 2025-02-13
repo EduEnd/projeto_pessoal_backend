@@ -2,6 +2,7 @@ package br.com.ifba.Client.service;
 
 import br.com.ifba.Client.entity.Client;
 import br.com.ifba.Client.repository.ClientRepository;
+import br.com.ifba.User.entity.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -50,6 +51,10 @@ public class ClientServiceTest {
         // Verificando se o resultado não é nulo e se a quantidade de elementos está correta
         assertNotNull(resultado);
         assertEquals(2, resultado.getTotalElements());
+
+        System.out.println("Total de clientes paginados " + resultado.getTotalElements() + "\n");
+
+
     }
 
     // Teste para buscar clientes por nome
@@ -57,9 +62,11 @@ public class ClientServiceTest {
     public void BuscarClientesPorNome() {
         // Criando clientes com o nome "João"
         Client client1 = new Client();
-        client1.setName("João");
+        client1.setUser(new User());
+        client1.getUser().setName("João");
         Client client2 = new Client();
-        client2.setName("João");
+        client2.setUser(new User());
+        client2.getUser().setName("João");
 
         // Criando uma lista com esses clientes
         List<Client> clientesMock = List.of(client1, client2);
@@ -73,9 +80,9 @@ public class ClientServiceTest {
         // Verificando se o resultado não é nulo, se a lista contém 2 elementos e o nome do primeiro cliente
         assertNotNull(resultado);
         assertEquals(2, resultado.size()); // Usando size() para verificar o número de elementos
-        assertEquals("João", resultado.get(0).getName());
+        assertEquals("João", resultado.get(0).getUser().getName());
 
-        System.out.println("Cliente encontrado: " + resultado.get(0).getName());
+        System.out.println("Cliente encontrado: " + resultado.get(0).getUser().getName() + "\n");
     }
 
     // Teste para buscar um cliente pelo ID
@@ -84,6 +91,8 @@ public class ClientServiceTest {
         // Criando um cliente com ID 1
         Client client = new Client();
         client.setId(1L);
+
+
 
         // Configurando o mock para retornar o cliente quando buscar pelo ID
         when(clientRepository.findById(1L)).thenReturn(Optional.of(client));
@@ -95,12 +104,12 @@ public class ClientServiceTest {
         assertNotNull(resultado);
         assertEquals(Long.valueOf(1), resultado.getId());
 
-        System.out.println("Cliente buscado por id: " + resultado.getId());
+        System.out.println("Cliente buscado por id: " + resultado.getId() + "\n");
     }
 
     // Teste para lançar exceção quando um cliente não é encontrado
     @Test
-    public void LancarExcecaoQuandoClienteNaoExiste() {
+    public void ExcecaoClienteNaoExiste() {
         // Configurando o mock para retornar Optional.empty quando o cliente não é encontrado
         when(clientRepository.findById(99L)).thenReturn(Optional.empty());
 
@@ -109,6 +118,7 @@ public class ClientServiceTest {
 
         // Verificando se a mensagem da exceção é a esperada
         assertEquals("Recurso não encontrado!", exception.getMessage());
+        System.out.println("Cliente nao existe" + "\n");
     }
 
     // Teste para salvar um novo cliente
@@ -116,9 +126,14 @@ public class ClientServiceTest {
     public void SalvarNovoCliente() {
         // Criando um cliente com nome "Maria"
         Client client = new Client();
-        client.setName("Maria");
-        client.setIdade(20);
-        client.setLocalidade("Irece/Bahia");
+        client.setUser(new User());
+        client.getUser().setName("Maria");
+        client.getUser().setIdade(20);
+        client.getUser().setEndereco("Irece/Bahia");
+        client.getUser().setEmail("MariaLurdes@gmail.com");
+        client.getUser().setUser_name("MariLu");
+        client.getUser().setPassword("jkt1Mari");
+
 
         // Configurando o mock para retornar o cliente quando o método save for chamado
         when(clientRepository.save(any(Client.class))).thenReturn(client);
@@ -128,14 +143,19 @@ public class ClientServiceTest {
 
         // Verificando se o resultado não é nulo e se o nome do cliente é "Maria"
         assertNotNull(resultado);
-        assertEquals("Maria", resultado.getName());
-        assertEquals(20, resultado.getIdade());
-        assertEquals("Irece/Bahia", resultado.getLocalidade());
+        assertEquals("Maria", resultado.getUser().getName());
+        assertEquals(20, resultado.getUser().getIdade());
+        assertEquals("Irece/Bahia", resultado.getUser().getEndereco());
+        assertEquals("MariaLurdes@gmail.com", resultado.getUser().getEmail());
+        assertEquals("MariLu", resultado.getUser().getUser_name());
+        assertEquals("jkt1Mari", resultado.getUser().getPassword());
 
         verify(clientRepository, times(1)).save(client);
-        System.out.println("Cliente Salvo: " + resultado.getName() +
-                " Idade:" + resultado.getIdade() +
-                " Localidade: " + resultado.getLocalidade() );
+        System.out.println("Cliente Salvo: " + resultado.getUser().getName() +
+                "\n Idade: " + resultado.getUser().getIdade() +
+                "\n Localidade: " + resultado.getUser().getEndereco() +
+                "\n Email: " + resultado.getUser().getEmail()+
+                "\n Nome de Usuario: " + resultado.getUser().getUser_name() + "\n" );
     }
 
     // Teste para atualizar um cliente
@@ -144,14 +164,20 @@ public class ClientServiceTest {
 
         // Criando um cliente com ID 1 e nome "Carlos"
         Client client = new Client();
-        client.setId(1L);
-        client.setName("Carlos");
-        client.setIdade(34);
-        client.setLocalidade("America dourada/Bahia");
+        client.setUser(new User());
+        client.getUser().setId(1L);
+        client.getUser().setName("Carlos");
+        client.getUser().setIdade(34);
+        client.getUser().setEndereco("America dourada/Bahia");
+        client.getUser().setEmail("Carlitos@gmail.com");
+        client.getUser().setUser_name("Carlao");
+        client.getUser().setPassword("Janeiro15");
 
-        System.out.println("Cliente atualizado: "+ client.getName() +
-                " Idade:" + client.getIdade() +
-                " Localidade: " + client.getLocalidade());
+        System.out.println("Cliente atualizado: "+ client.getUser().getName() +
+                "\n Idade:" + client.getUser().getIdade() +
+                "\n Localidade: " + client.getUser().getEndereco() +
+                "\n Email: " + client.getUser().getEmail()+
+                "\n Nome de Usuario: " + client.getUser().getUser_name() + "\n");
 
         // Configurando o mock para retornar o cliente atualizado
         when(clientRepository.save(any(Client.class))).thenReturn(client);
@@ -176,7 +202,7 @@ public class ClientServiceTest {
         verify(clientRepository, times(1)).deleteById(1L);
         // Verificando se a mensagem de sucesso está correta
         assertEquals("Cliente deletado com sucesso", response.get("message"));
-        System.out.println("Cliente deletado");
+        System.out.println("Cliente deletado\n");
     }
 }
 

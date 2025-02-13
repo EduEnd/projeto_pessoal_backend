@@ -3,6 +3,8 @@ package br.com.ifba.Client.service;
 
 import br.com.ifba.Client.entity.Client;
 import br.com.ifba.Client.repository.ClientRepository;
+import br.com.ifba.Funcionario.entity.Funcionario;
+import br.com.ifba.Funcionario.repository.FuncionarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -19,12 +21,16 @@ public class ClientService implements ClientIService {
 
     private final ClientRepository ClientRepository; // Repositório para persistência de cliente
 
+    private final FuncionarioRepository funcionarioRepository;
+
+
     /**
      * Obtém todos os clientes com paginação.
      * @param pageable Informações de paginação
      * @return Uma página de clientes
      */
     public Page<Client> findAll(Pageable pageable) {
+
         return ClientRepository.findAll(pageable);
     }
 
@@ -34,7 +40,7 @@ public class ClientService implements ClientIService {
      * @return Lista de clientes com o nome especificado
      */
     public List<Client> findByName(String name) {
-        return (List<Client>) ClientRepository.findByName(name);
+        return  ClientRepository.findByName(name);
     }
 
     /**
@@ -54,7 +60,6 @@ public class ClientService implements ClientIService {
      */
     @Transactional
     public Client save(Client client) {
-
         // Salva o cliente e retorna a instância salva
         return ClientRepository.save(client);
     }
@@ -76,6 +81,17 @@ public class ClientService implements ClientIService {
         Map<String, String> response = new HashMap<>();
         response.put("message", "Cliente deletado com sucesso"); // Mensagem de sucesso
         return response;
+    }
+
+    public String avaliacaoFuncionario(String avaliacao, Long clientId, Long funcionarioId ){
+          Funcionario funcionario = funcionarioRepository.findById(funcionarioId)
+                  .orElseThrow(()-> new RuntimeException("Funcionario não encontrado!"));
+          Client client = ClientRepository.findById(clientId)
+                  .orElseThrow(()->new RuntimeException("Cliente não encontrado!"));
+
+
+
+    return  avaliacao;
     }
 }
 

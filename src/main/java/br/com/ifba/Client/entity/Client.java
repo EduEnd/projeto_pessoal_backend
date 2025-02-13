@@ -2,6 +2,8 @@ package br.com.ifba.Client.entity;
 
 
 
+import br.com.ifba.Funcionario.entity.Funcionario;
+import br.com.ifba.User.entity.User;
 import br.com.ifba.infrastructure.entity.PersistenceEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -17,15 +19,14 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = false)  // Define como o método equals e hashCode serão gerados, sem incluir a superclasse
 public class Client  extends PersistenceEntity implements Serializable {
 
-    @Column(name = "name", nullable = false)  // Define a coluna 'name' que não pode ser nula
-    private String name;
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false, unique = true)
+    private User user;
 
-    @Column(name = "localidade", nullable = false, unique = true)  // Define a coluna 'description' que é única e não pode ser nula
-    private String localidade;
+    @ManyToOne
+    @JoinColumn(name = "funcionario_id", nullable = false, unique = true)
+    private Funcionario funcionario;
 
-
-    @Column(name = "idade", nullable = false)  // Define a coluna 'note' que não pode ser nula
-    private int idade;
 
 }
 

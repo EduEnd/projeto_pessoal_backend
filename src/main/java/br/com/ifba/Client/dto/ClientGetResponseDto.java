@@ -17,10 +17,16 @@ public class ClientGetResponseDto {
     private String name;
 
     @JsonProperty(value = "localidade")  // Mapeia o campo 'localidade' para o nome JSON 'localidade'
-    private String localidade;
+    private String endereco;
 
     @JsonProperty(value = "idade")  // Mapeia o campo 'idade' para o nome JSON 'idade'
     private int idade;
+
+    @JsonProperty(value = "email") // Mapeia o campo 'email' para o nome JSON 'idade'
+    private  String email;
+
+    @JsonProperty(value = "nome de usuario") // Mapeia o campo 'user_name' para o nome JSON 'idade'
+    private String user_name;
 }
 
 

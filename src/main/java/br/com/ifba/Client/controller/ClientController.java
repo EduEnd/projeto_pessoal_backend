@@ -65,9 +65,9 @@ public class ClientController {
     // Endpoint para salvar um novo cliente
     @PostMapping(path = "/save", consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ClientGetResponseDto> save(@RequestBody @Valid ClientPostRequestDto evaluationPostRequestDto) {
+    public ResponseEntity<ClientGetResponseDto> save(@RequestBody @Valid ClientPostRequestDto clientPostRequestDto) {
         // Converte o DTO recebido para uma entidade
-        Client client = objectMapperUtil.map(evaluationPostRequestDto, Client.class);
+        Client client = objectMapperUtil.map(clientPostRequestDto, Client.class);
 
         // Salva a entidade no banco de dados
         Client savedClient = clientService.save(client);
@@ -79,9 +79,9 @@ public class ClientController {
 
     // Endpoint para atualizar um cliente existente
     @PutMapping(path = "/update", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> update(@RequestBody @Valid ClientPostRequestDto evaluationPostRequestDto) {
+    public ResponseEntity<Void> update(@RequestBody @Valid ClientPostRequestDto clientPostRequestDto) {
         // Converte o DTO para uma entidade
-        Client client = objectMapperUtil.map(evaluationPostRequestDto, Client.class);
+        Client client = objectMapperUtil.map(clientPostRequestDto, Client.class);
 
         // Atualiza a entidade no banco de dados
         clientService.update(client);

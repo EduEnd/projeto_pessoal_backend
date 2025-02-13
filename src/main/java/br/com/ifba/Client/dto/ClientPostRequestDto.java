@@ -22,14 +22,25 @@ public class ClientPostRequestDto {
     private String name;
 
     @JsonProperty(value = "localidade")  // Mapeia o campo 'localidade' para o nome JSON 'localidade'
-    @NotNull(message = "A localidade é obrigatória!")  // Validação: o campo não pode ser nulo
-    @NotBlank(message = "A localidade não pode ser vazia!")  // Validação: o campo não pode ser vazio
-    @Size(min = 5, max = 150, message = "A localidade precisa ter pelo menos 5 caracteres e no máximo 150!")  // Validação: tamanho mínimo e máximo da string
-    private String localidade;
+    @NotNull(message = "O endereco é obrigatória!")  // Validação: o campo não pode ser nulo
+    @NotBlank(message = "O endereco não pode ser vazia!")  // Validação: o campo não pode ser vazio
+    @Size(min = 5, max = 150, message = " O endereco precisa ter pelo menos 5 caracteres e no máximo 150!")  // Validação: tamanho mínimo e máximo da string
+    private String endereco;
 
     @JsonProperty(value = "idade")  // Mapeia o campo 'idade' para o nome JSON 'idade'
     @NotNull(message = "A idade é obrigatória!")  // Validação: o campo não pode ser nulo
     private int idade;
+
+    @JsonProperty(value = "email")
+    @NotNull(message = "O email é obrigatorio!")
+    @NotBlank(message = "O email não pode ser vazio!")
+    private  String email;
+
+    @JsonProperty(value = "nome de usuario")
+    @NotNull(message = "O nome de usuario é obrigatorio!")
+    @NotBlank(message = "O nome de usuario não pode ser vazio!")
+    @Size(min = 3, max = 10, message = "O nome de usuario tem que ter pelo menos 5 caracteres e no máximo 10!" )
+    private String user_name;
 }
 
 

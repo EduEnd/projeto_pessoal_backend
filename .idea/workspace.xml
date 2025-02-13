@@ -9,20 +9,22 @@
   <component name="ChangeListManager">
     <list default="true" id="932bf6fe-9180-42b3-8f04-2be418669122" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/repository/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/dto/ClientGetResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/dto/ClientGetResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/dto/ClientPostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/dto/ClientPostRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/entity/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Client/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/funcionario/controller/FuncionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/controller/FuncionarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/funcionario/dto/FuncionarioGetResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/dto/FuncionarioGetResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/funcionario/dto/FuncionarioPostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/dto/FuncionarioPostRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/funcionario/entity/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/entity/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/funcionario/repository/FuncionarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/repository/FuncionarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/funcionario/service/FuncionarioIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/service/FuncionarioIService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/funcionario/service/FuncionarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/service/FuncionarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/controller/FuncionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/controller/FuncionarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/dto/FuncionarioGetResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/dto/FuncionarioGetResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/dto/FuncionarioPostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/dto/FuncionarioPostRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/entity/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/entity/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/repository/FuncionarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/repository/FuncionarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/service/FuncionarioIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/service/FuncionarioIService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/service/FuncionarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Funcionario/service/FuncionarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/Main/SpringClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/Main/SpringClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifba/User/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ifba/Client/service/ClientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ifba/Client/service/ClientServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ifba/Funcionario/service/FuncionarioServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ifba/Funcionario/service/FuncionarioServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,41 +62,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.SpringClient.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClientServiceTest.deveBuscarClientesPorNome.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClientServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FuncionarioServiceTest.DeletarFuncionarioPorId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FuncionarioServiceTest.SalvarNovoFuncionario.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.FuncionarioServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.DeletarUserPorId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ProjectPessoal (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProjectPessoal.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProjetoPessoal.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.projectPessoa.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.projetoPessoal.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/perei/Documents/GitHub/projeto_pessoal_backend/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/perei/Documents/GitHub/projeto_pessoal_backend/src/main/java/br/com/ifba/funcionario/service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringClient.executor": "Run",
+    "JUnit.AvaliacaoServiceTest.executor": "Run",
+    "JUnit.ClientServiceTest.AtualizarCliente.executor": "Debug",
+    "JUnit.ClientServiceTest.BuscarClientePorId.executor": "Run",
+    "JUnit.ClientServiceTest.RetornarTodosOsClientesPaginados.executor": "Run",
+    "JUnit.ClientServiceTest.deveBuscarClientesPorNome.executor": "Run",
+    "JUnit.ClientServiceTest.executor": "Run",
+    "JUnit.FuncionarioServiceTest.AssociarFuncionarioPorId.executor": "Run",
+    "JUnit.FuncionarioServiceTest.DeletarFuncionarioPorId.executor": "Run",
+    "JUnit.FuncionarioServiceTest.ListarClientesDoFuncionario.executor": "Run",
+    "JUnit.FuncionarioServiceTest.RetornarTodosOsFuncionariosPaginados.executor": "Run",
+    "JUnit.FuncionarioServiceTest.SalvarNovoFuncionario.executor": "Debug",
+    "JUnit.FuncionarioServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.DeletarUserPorId.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ProjectPessoal (1).executor": "Run",
+    "Spring Boot.ProjectPessoal.executor": "Run",
+    "Spring Boot.ProjetoPessoal.executor": "Run",
+    "Spring Boot.projectPessoa.executor": "Run",
+    "Spring Boot.projetoPessoal.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/perei/Documents/GitHub/projeto_pessoal_backend/src/test/java",
+    "last_opened_file_path": "C:/Users/perei/Documents/GitHub/projeto_pessoal_backend/src/main/java/br/com/ifba/funcionario/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -111,7 +120,35 @@
       <recent name="br.com.ifba.Client.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="Spring Boot.ProjectPessoal (1)">
+    <configuration name="SpringClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ifba.Main.SpringClient" />
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ifba.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AvaliacaoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="site" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ifba.Avaliacao.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ifba.Avaliacao.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ifba.Avaliacao.service.AvaliacaoServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="site" />
       <extension name="coverage">
@@ -142,22 +179,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FuncionarioServiceTest.DeletarFuncionarioPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="site" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ifba.Funcionario.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.ifba.Funcionario.service" />
-      <option name="MAIN_CLASS_NAME" value="br.com.ifba.Funcionario.service.FuncionarioServiceTest" />
-      <option name="METHOD_NAME" value="DeletarFuncionarioPorId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="site" />
       <extension name="coverage">
@@ -173,22 +194,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.DeletarUserPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="site" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ifba.User.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.ifba.User.service" />
-      <option name="MAIN_CLASS_NAME" value="br.com.ifba.User.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="DeletarUserPorId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProjectPessoal (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="site" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.ifba.Main.ProjectPessoal" />
@@ -198,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringClient" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.FuncionarioServiceTest" />
+        <item itemvalue="JUnit.AvaliacaoServiceTest" />
         <item itemvalue="JUnit.ClientServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.DeletarUserPorId" />
-        <item itemvalue="JUnit.FuncionarioServiceTest.DeletarFuncionarioPorId" />
       </list>
     </recent_temporary>
   </component>
@@ -253,6 +258,10 @@
       <workItem from="1738857363455" duration="20017000" />
       <workItem from="1738878631464" duration="2573000" />
       <workItem from="1738882629778" duration="138000" />
+      <workItem from="1738961487178" duration="2097000" />
+      <workItem from="1739298357555" duration="4030000" />
+      <workItem from="1739364826735" duration="14991000" />
+      <workItem from="1739447859678" duration="10431000" />
     </task>
     <servers />
   </component>
